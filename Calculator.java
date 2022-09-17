@@ -36,7 +36,8 @@ class Calculator
                 }
                 case 3:
                 {
-                    // multiplication();
+                    multiplication();
+                    break;
                 }
                 case 4:
                 {
@@ -96,6 +97,31 @@ class Calculator
         System.out.println();
         System.out.println("Grand value after subtracting is : "+value);
         System.out.println();
+        System.out.println("Enter 1 to exit the calculator ");
+        System.out.println("Enter 0 to Continue with the calculator");
+        gate=sc.nextInt();
+    }
+
+    // performing multiplication operation in this method
+
+    static void multiplication()
+    {
+        Scanner sc=new Scanner(System.in);
+        long value=1l;
+        long number;
+        do
+        {
+            System.out.print("Enter number for performing multiplication : ");
+            number=sc.nextLong();
+            if(number!=0)
+            {
+                value*=number;
+            }
+            System.out.println("Current value is : "+value);
+        }
+        while(number!=0);
+        System.out.println();
+        System.out.println("Grand value after performing multiplication is : "+value);        
         System.out.println("Enter 1 to exit the calculator ");
         System.out.println("Enter 0 to Continue with the calculator");
         gate=sc.nextInt();
