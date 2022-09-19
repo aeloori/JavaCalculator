@@ -41,7 +41,7 @@ class Calculator
                 }
                 case 4:
                 {
-                    // division();
+                    division();
                 }
             }
         }
@@ -122,6 +122,20 @@ class Calculator
         while(number!=0);
         System.out.println();
         System.out.println("Grand value after performing multiplication is : "+value);        
+        System.out.println("Enter 1 to exit the calculator ");
+        System.out.println("Enter 0 to Continue with the calculator");
+        gate=sc.nextInt();
+    }
+    static void division()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number for numerator : ");
+        Double num1=sc.nextDouble();
+        System.out.println("Enter a number for denominator : ");
+        Double num2=sc.nextDouble();
+        System.out.println("Value is : "+(num1/num2));
+        // System.out.println("reminder is : "+(num1%num2));
+        System.out.println();       
         System.out.println("Enter 1 to exit the calculator ");
         System.out.println("Enter 0 to Continue with the calculator");
         gate=sc.nextInt();
